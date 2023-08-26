@@ -1,0 +1,133 @@
+body {
+  background-color: azure;
+}
+button {
+  cursor: pointer;
+}
+.main-body {
+  max-width: 1200px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-header {
+  min-width: 800px;
+  background-color: #F4D160;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: row; /* 기본값 왼쪽 --> 오른쪽*/
+  /* text-align: center; */
+  justify-content: space-between; /* 좌우, 위 아래 */
+  align-items: center; /* 위아래, 좌 우 */
+
+}
+.main-header-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 23px;
+}
+.main-header-logo > img {
+  margin-right: 20px;
+}
+
+.main-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  
+}
+
+.todo-list-add {
+  min-width: 800px;
+  padding: 20px 40px;
+  /* background-color: #808080; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.todo-list-add > button {
+  padding: 15px 40px;
+  background-color: #75C2F6;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+.todo-list-add-inputs {
+  display: flex;
+  align-items: center;
+}
+.todo-list-add span, button {
+  white-space: nowrap;
+}
+.todo-list-add input {
+  margin-left: 5px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  height: 48px;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px gray;
+}
+.todo-list-add input:focus {
+  outline: 2px solid #F4D160;
+}
+
+.todo-list-add input:nth-child(4) {
+  width: 500px;
+}
+.main-list {
+  min-width: 800px;
+  padding: 20px 40px;
+  font-size: 30px;
+}
+
+.list-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.todo-list-overlay {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  width: 300px;
+  box-shadow: 1px 1px 1px gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+.todo-list-overlay p:first-child {
+  font-size: 28px;
+
+}
+.todo-list-overlay p:nth-child(2) {
+  font-size: 18px;
+}
+
+
+.todo-list-overlay button {
+  width: 100px;
+  /* background-color: white; */
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  
+}
+.overlay-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  
+}
+.overlay-remove-button {
+  background-color: #FFAB76;
+}
+
+.overlay-done-button {
+  background-color: #34BE82;
+}
